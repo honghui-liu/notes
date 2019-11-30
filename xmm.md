@@ -1,16 +1,16 @@
 # A short note on the data reduction of XMM-Newton
 ## For EPIC-pn
 ### Useful links:
-1. XMM-Newton science archive: https://www.cosmos.esa.int/web/xmm-newton/xsa
-2. Thread for pn spectrum: https://www.cosmos.esa.int/web/xmm-newton/sas-thread-pn-spectrum
-3. The XMM abc guide: https://heasarc.gsfc.nasa.gov/docs/xmm/abc/
-4. User's guide to XMM SAS: https://xmm-tools.cosmos.esa.int/external/xmm_user_support/documentation/sas_usg/USG/
+1. XMM-Newton science archive: <https://www.cosmos.esa.int/web/xmm-newton/xsa>
+2. Thread for pn spectrum: <https://www.cosmos.esa.int/web/xmm-newton/sas-thread-pn-spectrum>
+3. The XMM abc guide: <https://heasarc.gsfc.nasa.gov/docs/xmm/abc/>
+4. User's guide to XMM SAS: <https://xmm-tools.cosmos.esa.int/external/xmm_user_support/documentation/sas_usg/USG/>
 
 ### Installation of SAS
 To reduce data of XMM-Newton, the XMM-Newton Science Analysis System (SAS) has to beinstalled. I installed SAS version 18.0.0 on my macos following the instruction:  
-https://www.cosmos.esa.int/web/xmm-newton/sas-installation/  
+<https://www.cosmos.esa.int/web/xmm-newton/sas-installation/>  
 Some tools are prerequired to install SAS:  
-https://www.cosmos.esa.int/web/xmm-newton/sas-requirements
+<https://www.cosmos.esa.int/web/xmm-newton/sas-requirements>
 
 ### Calibration
 Current Calibration Files (CCF) are needed to reduce data of XMM-Newton. The CCF can be downloaded here:  
