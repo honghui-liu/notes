@@ -1,15 +1,19 @@
 ---
 layout: page
 title: About
-tagline: A few more words about this theme
-permalink: /about.html
-ref: about
-order: 0
+permalink: /about/
 ---
 
-This is the _Cayman Blog_ Jekyll theme. You can find out more info about customizing this theme, as well as basic usage documentation, and source code at: [cayman-blog](https://github.com/lorepirri/cayman-blog)
+This website is created by Honghui Liu to record the data reduction procedure of some X-ray mission like *XMM-Newton* and *NuSTAR*. Please leave me a message if you find anything wrong. I will be very grateful.
 
-You can find the source code for _Jekyll_ at [jekyll](https://github.com/jekyll/jekyll)
+This blog use the base Jekyll theme. Please find more about this theme at [jekyllrb.com](https://jekyllrb.com/)
 
+<!-- You can find the source code for Minima at GitHub:
+[jekyll][jekyll-organization] /
+[minima](https://github.com/jekyll/minima)
 
-[Go to the Home Page]({{ '/' | absolute_url }})
+You can find the source code for Jekyll at GitHub:
+[jekyll][jekyll-organization] /
+[jekyll](https://github.com/jekyll/jekyll)
+
+[jekyll-organization]: https://github.com/jekyll -->
