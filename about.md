@@ -1,7 +1,10 @@
 ---
 layout: page
 title: About
-permalink: /about/
+tagline: About this blog
+permalink: /about.html
+ref: about
+order: 0
 ---
 
 This website is created by Honghui Liu to record the data reduction procedure of some X-ray mission like *XMM-Newton* and *NuSTAR*. Please leave me a message if you find anything wrong. I will be very grateful.
