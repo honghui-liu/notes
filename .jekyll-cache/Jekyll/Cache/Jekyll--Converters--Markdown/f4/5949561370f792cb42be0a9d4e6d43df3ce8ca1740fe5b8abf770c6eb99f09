@@ -1,0 +1,110 @@
+I"Õ <p>The very basic data reduction procedure of EPIN-pn and RGS is summarized.</p>
+
+<h1 id="a-short-note-on-the-data-reduction-of-xmm-newton">A short note on the data reduction of XMM-Newton</h1>
+<h2 id="for-epic-pn">For EPIC-pn</h2>
+<h3 id="useful-links">Useful links:</h3>
+<ol>
+  <li>XMM-Newton science archive: <a href="https://www.cosmos.esa.int/web/xmm-newton/xsa">https://www.cosmos.esa.int/web/xmm-newton/xsa</a></li>
+  <li>Thread for pn spectrum: <a href="https://www.cosmos.esa.int/web/xmm-newton/sas-thread-pn-spectrum">https://www.cosmos.esa.int/web/xmm-newton/sas-thread-pn-spectrum</a></li>
+  <li>The XMM abc guide: <a href="https://heasarc.gsfc.nasa.gov/docs/xmm/abc/">https://heasarc.gsfc.nasa.gov/docs/xmm/abc/</a></li>
+  <li>Userâ€™s guide to XMM SAS: <a href="https://xmm-tools.cosmos.esa.int/external/xmm_user_support/documentation/sas_usg/USG/">https://xmm-tools.cosmos.esa.int/external/xmm_user_support/documentation/sas_usg/USG/</a></li>
+</ol>
+
+<h3 id="installation-of-sas">Installation of SAS</h3>
+<p>To reduce data of XMM-Newton, the XMM-Newton Science Analysis System (SAS) has to beinstalled. I installed SAS version 18.0.0 on my macos following the instruction:<br />
+<a href="https://www.cosmos.esa.int/web/xmm-newton/sas-installation/">https://www.cosmos.esa.int/web/xmm-newton/sas-installation/</a><br />
+Some tools are prerequired to install SAS:<br />
+<a href="https://www.cosmos.esa.int/web/xmm-newton/sas-requirements">https://www.cosmos.esa.int/web/xmm-newton/sas-requirements</a></p>
+
+<h3 id="calibration">Calibration</h3>
+<p>Current Calibration Files (CCF) are needed to reduce data of XMM-Newton. The CCF can be downloaded here:<br />
+<a href="https://heasarc.gsfc.nasa.gov/docs/xmm/xmmgof_mirror.html">https://heasarc.gsfc.nasa.gov/docs/xmm/xmmgof_mirror.html</a></p>
+
+<h3 id="reduction">Reduction</h3>
+<ul>
+  <li>To download Observation Data Files (ODF):</li>
+</ul>
+<p><a href="https://www.cosmos.esa.int/web/xmm-newton/xsa">https://www.cosmos.esa.int/web/xmm-newton/xsa</a><br />
+Decompress the data to any directory you want but do remember where it is. In this example, the ODF files are in directory: /home/honghui/fairall-9/0741330101/odf</p>
+<ul>
+  <li>To set the environment for SAS:
+    <ul>
+      <li>Initiate SAS
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  %&gt;&gt;. /home/honghui/xmmsas_20190531_1155/setsas.sh
+</code></pre></div>        </div>
+      </li>
+      <li>Set environment variables
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  %&gt;&gt;export SAS_CCFPATH=/home/honghui/CCF    
+  %&gt;&gt;export SAS_ODF=/home/honghui/fairall-9/0741330101/odf 
+  %&gt;&gt;export SAS_CCF=/home/honghui/fairall-9/0741330101/odf
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>To get the CCF Index File (CIF):
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%&gt;&gt;cd $SAS_ODF  
+%&gt;&gt;cifbuild withccfpath=no analysisdate=now category=XMMCCF fullpath=yes
+%&gt;&gt;export SAS_CCF=/home/honghui/fairall-9/0741330101/odf/ccf.cif
+</code></pre></div>    </div>
+  </li>
+  <li>To extract data from calibration data base:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%&gt;&gt;odfingest odfdir=$SAS_ODF outdir=$SAS_ODF
+%&gt;&gt;export SAS_ODF=/home/honghui/fairall-9/0741330101/odf/2640_0741330101_SCX00000SUM.SAS
+</code></pre></div>    </div>
+  </li>
+  <li>The pipeline:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%&gt;&gt;epproc 
+</code></pre></div>    </div>
+  </li>
+  <li>Exclude background flaring
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%&gt;&gt;evselect table=2640_0741330101_EPN_U002_ImagingEvts.ds:EVENTS expression='(PATTERN==0) &amp;&amp; (PI in [10000:12000])' withrateset=yes rateset=rate.fits maketimecolumn=yes timecolumn=TIME timebinsize=50 makeratecolumn=yes
+%&gt;&gt;tabgtigen table=rate.fits expression='RATE&lt;=0.1' gtiset=gti.fits
+%&gt;&gt;evselect table=2640_0741330101_EPN_U002_ImagingEvts.ds:EVENTS withfilteredset=true filteredset=filtered.fits keepfilteroutput=true destruct=true expression='(gti(gti.fits,TIME) &amp;&amp; (PI in [100:15000]) &amp;&amp; (PATTERN&lt;=4))'
+</code></pre></div>    </div>
+  </li>
+  <li>Create a sky image and select source and background region:
+Please refer to the <a href="https://www.cosmos.esa.int/web/xmm-newton/sas-thread-pn-spectrum">thread</a> of EPIC-pn to learn more about how to select regions with ds9.
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%&gt;&gt;evselect table=filtered.fits withimageset=true imageset=image4040.fits xcolumn=X ycolumn=Y imagebinning=binSize ximagebinsize=40 yimagebinsize=40
+%&gt;&gt;ds9 image4040.fit
+</code></pre></div>    </div>
+  </li>
+  <li>Extract source and background spectra, response files and light curve:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%&gt;&gt;evselect table=filtered.fits withspectrumset=yes spectrumset=spectrum.fits energycolumn=PI withspecranges=yes specchannelmin=0 specchannelmax=20479 spectralbinsize=5 expression='((X,Y) IN circle(23965.507,26545.495,1200)) &amp;&amp; (FLAG==0) &amp;&amp; (PATTERN&lt;=4)'
+%&gt;&gt;evselect table=filtered.fits withspectrumset=yes spectrumset=background.fits energycolumn=PI withspecranges=yes specchannelmin=0 specchannelmax=20479 spectralbinsize=5 expression='((X,Y) IN circle(26405.507,29075.495,1200)) &amp;&amp; (FLAG==0) &amp;&amp; (PATTERN&lt;=4)'
+%&gt;&gt;backscale spectrumset=spectrum.fits badpixlocation=filtered.fits
+%&gt;&gt;backscale spectrumset=background.fits badpixlocation=filtered.fits
+%&gt;&gt;rmfgen spectrumset=spectrum.fits rmfset=spectrum.rmf
+%&gt;&gt;arfgen spectrumset=spectrum.fits arfset=spectrum.arf withrmfset=yes rmfset=spectrum.rmf badpixlocation=filtered.fits
+%&gt;&gt;specgroup spectrumset=spectrum.fits minSN=10 rmfset=spectrum.rmf arfset=spectrum.arf backgndset=background.fits
+%&gt;&gt;evselect table=filtered.fits withrateset=yes rateset=lightcurve.fits timecolumn=TIME timebinsize=1 expression='((X,Y) IN circle(23965.507,26545.495,1200))'
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="for-rgs">For RGS</h2>
+<p>The best guide is the <a href="https://www.cosmos.esa.int/web/xmm-newton/sas-thread-rgs">RGS thread</a>.</p>
+<h3 id="get-the-spectra">Get the spectra</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%&gt;&gt;export SAS_ODF=/Users/honghui/projects/LLAGN/0500670201/odf/
+%&gt;&gt;export SAS_CCF=/Users/honghui/projects/LLAGN/0500670201/odf/
+%&gt;&gt;. ~/softwares/sas_18.0.0-Darwin-16.7.0-64/sas-ini.sh 
+%&gt;&gt;cd odf/
+%&gt;&gt;cifbuild
+%&gt;&gt;export SAS_CCF=/Users/honghui/projects/LLAGN/0500670201/odf/ccf.cif
+%&gt;&gt;odfingest
+%&gt;&gt;export SAS_ODF=/Users/honghui/projects/LLAGN/0500670201/odf/1405_0500670201_SCX00000SUM.SAS
+%&gt;&gt;mkdir rgs
+%&gt;&gt;cd rgs/
+%&gt;&gt;rgsproc withsrc=yes srclabel=RXJ1720.1+2638 srcstyle=radec srcra=260.0415042 srcdec=+26.6251250
+</code></pre></div></div>
+
+<h3 id="check-background-flaring">Check background flaring</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%&gt;&gt;evselect table=P0500670301R1S004EVENLI0000.FIT timebinsize=100 rateset=rgs1_background_lc.fits makeratecolumn=yes maketimecolumn=yes expression='(CCDNR==9) &amp;&amp; (REGION(P0500670301R1S004SRCLI_0000.FIT:RGS1_BACKGROUND,M_LAMBDA,XDSP_CORR))'
+%&gt;&gt;lcurve nser=1 cfile1=rgs1_background_lc.fits window="-" dtnb=100 outfile="lc" plot=yes plotdev="/xs"
+%&gt;&gt;tabgtigen table=rgs1_background_lc.fits gtiset=my_low_back.fits expression='(RATE&lt;0.1)'
+%&gt;&gt;rgsproc entrystage=3:filter auxgtitables=my_low_back.fits
+</code></pre></div></div>
+
+<h3 id="to-combine-the-spectra-of-rgs1-and-rgs2">To combine the spectra of RGS1 and RGS2</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%&gt;&gt;rgscombine pha='P0500670201R1S004SRSPEC1003.FIT P0500670201R2S005SRSPEC1003.FIT' rmf='P0500670201R1S004RSPMAT1003.FIT P0500670201R2S005RSPMAT1003.FIT' bkg='P0500670201R1S004BGSPEC1003.FIT P0500670201R2S005BGSPEC1003.FIT' filepha='02-r12_o1_srspec.pha' filermf='02-r12_o1_rmf.fits' filebkg='02-r12_o1_bgspec.fits'
+</code></pre></div></div>
+:ET

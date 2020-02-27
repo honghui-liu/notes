@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-27T19:05:16+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Data reduction notes</title><subtitle>A collection of data reduction procedure of some X-ray satellite</subtitle><author><name>Honghui</name></author><entry><title type="html">XMM-Newton data reduction</title><link href="http://localhost:4000/2020/02/27/XMM-data-reduction.html" rel="alternate" type="text/html" title="XMM-Newton data reduction" /><published>2020-02-27T00:00:00+08:00</published><updated>2020-02-27T00:00:00+08:00</updated><id>http://localhost:4000/2020/02/27/XMM-data-reduction</id><content type="html" xml:base="http://localhost:4000/2020/02/27/XMM-data-reduction.html">&lt;p&gt;The very basic data reduction procedure of EPIN-pn and RGS is summarized.&lt;/p&gt;
+
+&lt;h1 id=&quot;a-short-note-on-the-data-reduction-of-xmm-newton&quot;&gt;A short note on the data reduction of XMM-Newton&lt;/h1&gt;
+&lt;h2 id=&quot;for-epic-pn&quot;&gt;For EPIC-pn&lt;/h2&gt;
+&lt;h3 id=&quot;useful-links&quot;&gt;Useful links:&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;XMM-Newton science archive: &lt;a href=&quot;https://www.cosmos.esa.int/web/xmm-newton/xsa&quot;&gt;https://www.cosmos.esa.int/web/xmm-newton/xsa&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Thread for pn spectrum: &lt;a href=&quot;https://www.cosmos.esa.int/web/xmm-newton/sas-thread-pn-spectrum&quot;&gt;https://www.cosmos.esa.int/web/xmm-newton/sas-thread-pn-spectrum&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;The XMM abc guide: &lt;a href=&quot;https://heasarc.gsfc.nasa.gov/docs/xmm/abc/&quot;&gt;https://heasarc.gsfc.nasa.gov/docs/xmm/abc/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;User’s guide to XMM SAS: &lt;a href=&quot;https://xmm-tools.cosmos.esa.int/external/xmm_user_support/documentation/sas_usg/USG/&quot;&gt;https://xmm-tools.cosmos.esa.int/external/xmm_user_support/documentation/sas_usg/USG/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;installation-of-sas&quot;&gt;Installation of SAS&lt;/h3&gt;
+&lt;p&gt;To reduce data of XMM-Newton, the XMM-Newton Science Analysis System (SAS) has to beinstalled. I installed SAS version 18.0.0 on my macos following the instruction:&lt;br /&gt;
+&lt;a href=&quot;https://www.cosmos.esa.int/web/xmm-newton/sas-installation/&quot;&gt;https://www.cosmos.esa.int/web/xmm-newton/sas-installation/&lt;/a&gt;&lt;br /&gt;
+Some tools are prerequired to install SAS:&lt;br /&gt;
+&lt;a href=&quot;https://www.cosmos.esa.int/web/xmm-newton/sas-requirements&quot;&gt;https://www.cosmos.esa.int/web/xmm-newton/sas-requirements&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;calibration&quot;&gt;Calibration&lt;/h3&gt;
+&lt;p&gt;Current Calibration Files (CCF) are needed to reduce data of XMM-Newton. The CCF can be downloaded here:&lt;br /&gt;
+&lt;a href=&quot;https://heasarc.gsfc.nasa.gov/docs/xmm/xmmgof_mirror.html&quot;&gt;https://heasarc.gsfc.nasa.gov/docs/xmm/xmmgof_mirror.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;reduction&quot;&gt;Reduction&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;To download Observation Data Files (ODF):&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.cosmos.esa.int/web/xmm-newton/xsa&quot;&gt;https://www.cosmos.esa.int/web/xmm-newton/xsa&lt;/a&gt;&lt;br /&gt;
+Decompress the data to any directory you want but do remember where it is. In this example, the ODF files are in directory: /home/honghui/fairall-9/0741330101/odf&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;To set the environment for SAS:
+    &lt;ul&gt;
+      &lt;li&gt;Initiate SAS
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  %&amp;gt;&amp;gt;. /home/honghui/xmmsas_20190531_1155/setsas.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Set environment variables
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  %&amp;gt;&amp;gt;export SAS_CCFPATH=/home/honghui/CCF    
+  %&amp;gt;&amp;gt;export SAS_ODF=/home/honghui/fairall-9/0741330101/odf 
+  %&amp;gt;&amp;gt;export SAS_CCF=/home/honghui/fairall-9/0741330101/odf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;To get the CCF Index File (CIF):
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;%&amp;gt;&amp;gt;cd $SAS_ODF  
+%&amp;gt;&amp;gt;cifbuild withccfpath=no analysisdate=now category=XMMCCF fullpath=yes
+%&amp;gt;&amp;gt;export SAS_CCF=/home/honghui/fairall-9/0741330101/odf/ccf.cif
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;To extract data from calibration data base:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;%&amp;gt;&amp;gt;odfingest odfdir=$SAS_ODF outdir=$SAS_ODF
+%&amp;gt;&amp;gt;export SAS_ODF=/home/honghui/fairall-9/0741330101/odf/2640_0741330101_SCX00000SUM.SAS
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The pipeline:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;%&amp;gt;&amp;gt;epproc 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Exclude background flaring
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;%&amp;gt;&amp;gt;evselect table=2640_0741330101_EPN_U002_ImagingEvts.ds:EVENTS expression='(PATTERN==0) &amp;amp;&amp;amp; (PI in [10000:12000])' withrateset=yes rateset=rate.fits maketimecolumn=yes timecolumn=TIME timebinsize=50 makeratecolumn=yes
+%&amp;gt;&amp;gt;tabgtigen table=rate.fits expression='RATE&amp;lt;=0.1' gtiset=gti.fits
+%&amp;gt;&amp;gt;evselect table=2640_0741330101_EPN_U002_ImagingEvts.ds:EVENTS withfilteredset=true filteredset=filtered.fits keepfilteroutput=true destruct=true expression='(gti(gti.fits,TIME) &amp;amp;&amp;amp; (PI in [100:15000]) &amp;amp;&amp;amp; (PATTERN&amp;lt;=4))'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Create a sky image and select source and background region:
+Please refer to the &lt;a href=&quot;https://www.cosmos.esa.int/web/xmm-newton/sas-thread-pn-spectrum&quot;&gt;thread&lt;/a&gt; of EPIC-pn to learn more about how to select regions with ds9.
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;%&amp;gt;&amp;gt;evselect table=filtered.fits withimageset=true imageset=image4040.fits xcolumn=X ycolumn=Y imagebinning=binSize ximagebinsize=40 yimagebinsize=40
+%&amp;gt;&amp;gt;ds9 image4040.fit
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Extract source and background spectra, response files and light curve:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;%&amp;gt;&amp;gt;evselect table=filtered.fits withspectrumset=yes spectrumset=spectrum.fits energycolumn=PI withspecranges=yes specchannelmin=0 specchannelmax=20479 spectralbinsize=5 expression='((X,Y) IN circle(23965.507,26545.495,1200)) &amp;amp;&amp;amp; (FLAG==0) &amp;amp;&amp;amp; (PATTERN&amp;lt;=4)'
+%&amp;gt;&amp;gt;evselect table=filtered.fits withspectrumset=yes spectrumset=background.fits energycolumn=PI withspecranges=yes specchannelmin=0 specchannelmax=20479 spectralbinsize=5 expression='((X,Y) IN circle(26405.507,29075.495,1200)) &amp;amp;&amp;amp; (FLAG==0) &amp;amp;&amp;amp; (PATTERN&amp;lt;=4)'
+%&amp;gt;&amp;gt;backscale spectrumset=spectrum.fits badpixlocation=filtered.fits
+%&amp;gt;&amp;gt;backscale spectrumset=background.fits badpixlocation=filtered.fits
+%&amp;gt;&amp;gt;rmfgen spectrumset=spectrum.fits rmfset=spectrum.rmf
+%&amp;gt;&amp;gt;arfgen spectrumset=spectrum.fits arfset=spectrum.arf withrmfset=yes rmfset=spectrum.rmf badpixlocation=filtered.fits
+%&amp;gt;&amp;gt;specgroup spectrumset=spectrum.fits minSN=10 rmfset=spectrum.rmf arfset=spectrum.arf backgndset=background.fits
+%&amp;gt;&amp;gt;evselect table=filtered.fits withrateset=yes rateset=lightcurve.fits timecolumn=TIME timebinsize=1 expression='((X,Y) IN circle(23965.507,26545.495,1200))'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;for-rgs&quot;&gt;For RGS&lt;/h2&gt;
+&lt;p&gt;The best guide is the &lt;a href=&quot;https://www.cosmos.esa.int/web/xmm-newton/sas-thread-rgs&quot;&gt;RGS thread&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;get-the-spectra&quot;&gt;Get the spectra&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;%&amp;gt;&amp;gt;export SAS_ODF=/Users/honghui/projects/LLAGN/0500670201/odf/
+%&amp;gt;&amp;gt;export SAS_CCF=/Users/honghui/projects/LLAGN/0500670201/odf/
+%&amp;gt;&amp;gt;. ~/softwares/sas_18.0.0-Darwin-16.7.0-64/sas-ini.sh 
+%&amp;gt;&amp;gt;cd odf/
+%&amp;gt;&amp;gt;cifbuild
+%&amp;gt;&amp;gt;export SAS_CCF=/Users/honghui/projects/LLAGN/0500670201/odf/ccf.cif
+%&amp;gt;&amp;gt;odfingest
+%&amp;gt;&amp;gt;export SAS_ODF=/Users/honghui/projects/LLAGN/0500670201/odf/1405_0500670201_SCX00000SUM.SAS
+%&amp;gt;&amp;gt;mkdir rgs
+%&amp;gt;&amp;gt;cd rgs/
+%&amp;gt;&amp;gt;rgsproc withsrc=yes srclabel=RXJ1720.1+2638 srcstyle=radec srcra=260.0415042 srcdec=+26.6251250
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;check-background-flaring&quot;&gt;Check background flaring&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;%&amp;gt;&amp;gt;evselect table=P0500670301R1S004EVENLI0000.FIT timebinsize=100 rateset=rgs1_background_lc.fits makeratecolumn=yes maketimecolumn=yes expression='(CCDNR==9) &amp;amp;&amp;amp; (REGION(P0500670301R1S004SRCLI_0000.FIT:RGS1_BACKGROUND,M_LAMBDA,XDSP_CORR))'
+%&amp;gt;&amp;gt;lcurve nser=1 cfile1=rgs1_background_lc.fits window=&quot;-&quot; dtnb=100 outfile=&quot;lc&quot; plot=yes plotdev=&quot;/xs&quot;
+%&amp;gt;&amp;gt;tabgtigen table=rgs1_background_lc.fits gtiset=my_low_back.fits expression='(RATE&amp;lt;0.1)'
+%&amp;gt;&amp;gt;rgsproc entrystage=3:filter auxgtitables=my_low_back.fits
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;to-combine-the-spectra-of-rgs1-and-rgs2&quot;&gt;To combine the spectra of RGS1 and RGS2&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;%&amp;gt;&amp;gt;rgscombine pha='P0500670201R1S004SRSPEC1003.FIT P0500670201R2S005SRSPEC1003.FIT' rmf='P0500670201R1S004RSPMAT1003.FIT P0500670201R2S005RSPMAT1003.FIT' bkg='P0500670201R1S004BGSPEC1003.FIT P0500670201R2S005BGSPEC1003.FIT' filepha='02-r12_o1_srspec.pha' filermf='02-r12_o1_rmf.fits' filebkg='02-r12_o1_bgspec.fits'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Honghui</name></author><summary type="html">The very basic data reduction procedure of EPIN-pn and RGS is summarized.</summary></entry></feed>
