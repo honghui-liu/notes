@@ -4,7 +4,7 @@ show_downloads: false
 
 #baseurl: "/cayman-blog" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
 baseurl: ""
-url: "https://honghui-liu.github.io/Data-Reduction-Notes" # change this to the base hostname & protocol for your site
+url: "https://honghui-liu.github.io/notes" # change this to the base hostname & protocol for your site
 
 
 google_analytics:

@@ -1,4 +1,5 @@
 *.log
 *.temp
 /vendor
+/_site
 /.jekyll-cache
