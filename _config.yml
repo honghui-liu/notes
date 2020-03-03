@@ -1,5 +1,5 @@
-title: Data reduction notes
-description: A collection of data reduction procedure of some X-ray satellite
+title: Blogs
+description: Astrophysics
 show_downloads: false
 
 #baseurl: "/cayman-blog" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
@@ -20,7 +20,7 @@ theme: # leave it empty
 author: Honghui
 image: /thumbnail-jumbo.png
 twitter:
-  username: honghui-liu
+  username: vampire
 
 plugins:
   - jekyll-target-blank
@@ -28,4 +28,4 @@ plugins:
 target-blank:
     rel: nofollow
 
-header_page_refs: ['now', 'about', 'contact']
+header_page_refs: ['author','now']
