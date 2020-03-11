@@ -246,8 +246,12 @@
 <div class="highlight"><pre class="highlight"><code>wget -q -nH --no-check-certificate --cut-dirs=3 -r -l0 -c -N -np -R 'index*' -erobots=off --retr-symlinks https://heasarc.gsfc.nasa.gov/FTP/caldb/data/suzaku/
 </code></pre></div>    </div>
   </li>
+  <li>To use <a href="https://arxiv.org/abs/1601.05309" target="_blank" rel="noopener noreferrer nofollow">optimal binning</a> strategy with ftool <code>ftgrouppha</code>
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>ftgrouppha infile=MAXIJ1535_LE_chkey.pha backfile=MAXIJ1535_LE_bkg.pha outfile=MAXIJ1535_LE_opt.pha grouptype=opt respfile=MAXIJ1535_LE.rsp clobber=yes
+</code></pre></div>    </div>
+  </li>
 </ul>
-
 
   </div>
 
