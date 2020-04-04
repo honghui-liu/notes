@@ -1,45 +1,85 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://honghui-liu.github.io/notes/feed.xml" rel="self" type="application/atom+xml" /><link href="https://honghui-liu.github.io/notes/" rel="alternate" type="text/html" /><updated>2020-03-11T16:40:42+08:00</updated><id>https://honghui-liu.github.io/notes/feed.xml</id><title type="html">Blogs</title><subtitle>Astrophysics</subtitle><author><name>Honghui</name></author><entry><title type="html">Useful material for projects</title><link href="https://honghui-liu.github.io/notes/2020/03/01/useful-material.html" rel="alternate" type="text/html" title="Useful material for projects" /><published>2020-03-01T00:00:00+08:00</published><updated>2020-03-01T00:00:00+08:00</updated><id>https://honghui-liu.github.io/notes/2020/03/01/useful-material</id><content type="html" xml:base="https://honghui-liu.github.io/notes/2020/03/01/useful-material.html">&lt;p&gt;&lt;em&gt;This page is used to record the useful links, commands and references that I found can be very helpful for doing projects.&lt;/em&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://honghui-liu.github.io/notes/feed.xml" rel="self" type="application/atom+xml" /><link href="https://honghui-liu.github.io/notes/" rel="alternate" type="text/html" /><updated>2020-04-04T15:54:54+08:00</updated><id>https://honghui-liu.github.io/notes/feed.xml</id><title type="html">Blogs</title><subtitle>Astrophysics</subtitle><author><name>Honghui</name></author><entry><title type="html">Useful material for projects</title><link href="https://honghui-liu.github.io/notes/2020/03/01/useful-material.html" rel="alternate" type="text/html" title="Useful material for projects" /><published>2020-03-01T00:00:00+08:00</published><updated>2020-03-01T00:00:00+08:00</updated><id>https://honghui-liu.github.io/notes/2020/03/01/useful-material</id><content type="html" xml:base="https://honghui-liu.github.io/notes/2020/03/01/useful-material.html">&lt;p&gt;&lt;em&gt;This page is used to record the useful links, commands and references that I found can be very helpful for doing projects.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+
+&lt;h3 id=&quot;tools&quot;&gt;Tools&lt;/h3&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;Homepage of: &lt;a href=&quot;http://www.physics.fudan.edu.cn/tps/people/bambi/Site/Home.html&quot;&gt;Cosimo Bambi&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Plotting with PLT: &lt;a href=&quot;https://heasarc.gsfc.nasa.gov/docs/xte/recipes/plotting.html&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;RA DEC flexible converter: &lt;a href=&quot;http://www.astrouw.edu.pl/~jskowron/ra-dec/&quot;&gt;click me&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;X-ray transition energies: &lt;a href=&quot;https://www.nist.gov/pml/x-ray-transition-energies-database&quot;&gt;go&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;X-ray spectral fitting methods workshop: &lt;a href=&quot;https://www.mpe.mpg.de/resources/HE/Buchner/xrayworkshop/?fbclid=IwAR3aKISdmmASKO-IeX3skdzgFREszKa16WFbACG_tj-FQnHqeY0GYkFHyGs&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;MJD converter: &lt;a href=&quot;http://www.csgnetwork.com/julianmodifdateconv.html&quot;&gt;here it is&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Swift Hard X-ray Survey: &lt;a href=&quot;https://swift.gsfc.nasa.gov/results/bs105mon/&quot;&gt;Let’s go&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;The Swift-XRT Point Source catalog: &lt;a href=&quot;https://www.swift.ac.uk/2SXPS/&quot;&gt;2SXPS&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;The CLOUDY homepage: &lt;a href=&quot;https://www.nublado.org/&quot;&gt;CLOUDY&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Atomic database for astrophysicists: &lt;a href=&quot;http://www.atomdb.org/&quot;&gt;ATOMDB&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;The Galactic nH calculator: &lt;a href=&quot;https://www.swift.ac.uk/analysis/nhtot/index.php&quot;&gt;engage!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;RA DEC flexible converter: &lt;a href=&quot;http://www.astrouw.edu.pl/~jskowron/ra-dec/&quot;&gt;click me&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;MJD converter: &lt;a href=&quot;http://www.csgnetwork.com/julianmodifdateconv.html&quot;&gt;here it is&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Plotting with PLT: &lt;a href=&quot;https://heasarc.gsfc.nasa.gov/docs/xte/recipes/plotting.html&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;The ftool ftgrouppha: &lt;a href=&quot;https://heasarc.gsfc.nasa.gov/lheasoft/ftools/headas/ftgrouppha.html&quot;&gt;click&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Xselect: &lt;a href=&quot;https://www.swift.ac.uk/analysis/xrt/xselect.php&quot;&gt;Introduction&lt;/a&gt;, &lt;a href=&quot;https://heasarc.gsfc.nasa.gov/ftools/xselect/node1.html&quot;&gt;Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;catalog&quot;&gt;Catalog&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Swift Hard X-ray Survey: &lt;a href=&quot;https://swift.gsfc.nasa.gov/results/bs105mon/&quot;&gt;Let’s go&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;The Swift-XRT Point Source catalog: &lt;a href=&quot;https://www.swift.ac.uk/2SXPS/&quot;&gt;2SXPS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;website&quot;&gt;Website&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Homepage of: &lt;a href=&quot;http://www.physics.fudan.edu.cn/tps/people/bambi/Site/Home.html&quot;&gt;Cosimo Bambi&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;The Cambridge group: &lt;a href=&quot;https://www-xray.ast.cam.ac.uk/&quot;&gt;Here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Heasarc FTP: &lt;a href=&quot;https://heasarc.gsfc.nasa.gov/FTP/&quot;&gt;go&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;workshop&quot;&gt;Workshop&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;X-ray spectral fitting methods workshop: &lt;a href=&quot;https://www.mpe.mpg.de/resources/HE/Buchner/xrayworkshop/?fbclid=IwAR3aKISdmmASKO-IeX3skdzgFREszKa16WFbACG_tj-FQnHqeY0GYkFHyGs&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;software&quot;&gt;Software&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The CLOUDY homepage: &lt;a href=&quot;https://www.nublado.org/&quot;&gt;CLOUDY&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;others&quot;&gt;Others&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;X-ray transition energies: &lt;a href=&quot;https://www.nist.gov/pml/x-ray-transition-energies-database&quot;&gt;go&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;The chi-square table: &lt;a href=&quot;http://www.reid.ai/2012/09/chi-squared-distribution-table-with.html&quot;&gt;chi&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Uncertainty transformation: &lt;a href=&quot;https://www.cnblogs.com/heaventian/archive/2012/11/24/2786241.html&quot;&gt;click&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;The ftool ftgrouppha: &lt;a href=&quot;https://heasarc.gsfc.nasa.gov/lheasoft/ftools/headas/ftgrouppha.html&quot;&gt;click&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 
 &lt;h2 id=&quot;commands&quot;&gt;Commands&lt;/h2&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;To visualize the light curve
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;lcurve nser=1 cfile1=rate.fits window=&quot;-&quot; dtnb=50 nbint=3000 outfile=&quot;lc&quot; plot=yes plotdev=&quot;/xs&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;To group data with &lt;code&gt;grppha&lt;/code&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;grppha source_spectrum.fits pn_25.grp comm= &quot;chkey RESPFILE pn.rmf &amp;amp; chkey ANCRFILE pn.arf &amp;amp; chkey BACKFILE back_spectrum.fits &amp;amp; group min 25 &amp;amp; exit&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;To download data with FTP from nasa’s archive
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget -q -nH --no-check-certificate --cut-dirs=3 -r -l0 -c -N -np -R 'index*' -erobots=off --retr-symlinks https://heasarc.gsfc.nasa.gov/FTP/caldb/data/suzaku/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;To use &lt;a href=&quot;https://arxiv.org/abs/1601.05309&quot;&gt;optimal binning&lt;/a&gt; strategy with ftool &lt;code&gt;ftgrouppha&lt;/code&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ftgrouppha infile=MAXIJ1535_LE_chkey.pha backfile=MAXIJ1535_LE_bkg.pha outfile=MAXIJ1535_LE_opt.pha grouptype=opt respfile=MAXIJ1535_LE.rsp clobber=yes
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Honghui</name></author><summary type="html">This page is used to record the useful links, commands and references that I found can be very helpful for doing projects.</summary></entry><entry><title type="html">XMM-Newton data reduction</title><link href="https://honghui-liu.github.io/notes/2020/02/27/XMM-data-reduction.html" rel="alternate" type="text/html" title="XMM-Newton data reduction" /><published>2020-02-27T00:00:00+08:00</published><updated>2020-02-27T00:00:00+08:00</updated><id>https://honghui-liu.github.io/notes/2020/02/27/XMM-data-reduction</id><content type="html" xml:base="https://honghui-liu.github.io/notes/2020/02/27/XMM-data-reduction.html">&lt;p&gt;The very basic data reduction procedure of EPIN-pn and RGS is summarized.&lt;/p&gt;
+  &lt;li&gt;To visualize the light curve&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;lcurve nser=1 cfile1=rate.fits window=&quot;-&quot; dtnb=50 nbint=3000 outfile=&quot;lc&quot; plot=yes plotdev=&quot;/xs&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;To group data with &lt;code&gt;grppha&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;grppha source_spectrum.fits pn_25.grp comm= &quot;chkey RESPFILE pn.rmf &amp;amp; chkey ANCRFILE pn.arf &amp;amp; chkey BACKFILE back_spectrum.fits &amp;amp; group min 25 &amp;amp; exit&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;To download data with FTP from nasa’s archive&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget -q -nH --no-check-certificate --cut-dirs=3 -r -l0 -c -N -np -R 'index*' -erobots=off --retr-symlinks https://heasarc.gsfc.nasa.gov/FTP/caldb/data/suzaku/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;To use &lt;a href=&quot;https://arxiv.org/abs/1601.05309&quot;&gt;optimal binning&lt;/a&gt; strategy with ftool &lt;code&gt;ftgrouppha&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ftgrouppha infile=MAXIJ1535_LE_chkey.pha backfile=MAXIJ1535_LE_bkg.pha outfile=MAXIJ1535_LE_opt.pha grouptype=opt respfile=MAXIJ1535_LE.rsp clobber=yes
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Honghui</name></author><summary type="html">This page is used to record the useful links, commands and references that I found can be very helpful for doing projects.</summary></entry><entry><title type="html">XMM-Newton data reduction</title><link href="https://honghui-liu.github.io/notes/2020/02/27/XMM-data-reduction.html" rel="alternate" type="text/html" title="XMM-Newton data reduction" /><published>2020-02-27T00:00:00+08:00</published><updated>2020-02-27T00:00:00+08:00</updated><id>https://honghui-liu.github.io/notes/2020/02/27/XMM-data-reduction</id><content type="html" xml:base="https://honghui-liu.github.io/notes/2020/02/27/XMM-data-reduction.html">&lt;p&gt;The very basic data reduction procedure of EPIN-pn and RGS is summarized.&lt;/p&gt;
 
 &lt;h1 id=&quot;a-short-note-on-the-data-reduction-of-xmm-newton&quot;&gt;A short note on the data reduction of XMM-Newton&lt;/h1&gt;
 &lt;h2 id=&quot;for-epic-pn&quot;&gt;For EPIC-pn&lt;/h2&gt;
