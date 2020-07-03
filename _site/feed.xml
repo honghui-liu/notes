@@ -1,6 +1,57 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://honghui-liu.github.io/notes/feed.xml" rel="self" type="application/atom+xml" /><link href="https://honghui-liu.github.io/notes/" rel="alternate" type="text/html" /><updated>2020-07-03T17:36:48+08:00</updated><id>https://honghui-liu.github.io/notes/feed.xml</id><title type="html">Blogs</title><subtitle>Astrophysics</subtitle><author><name>Honghui</name></author><entry><title type="html">A simple tutorial for XSTAR</title><link href="https://honghui-liu.github.io/notes/2020/07/03/xstar.html" rel="alternate" type="text/html" title="A simple tutorial for XSTAR" /><published>2020-07-03T00:00:00+08:00</published><updated>2020-07-03T00:00:00+08:00</updated><id>https://honghui-liu.github.io/notes/2020/07/03/xstar</id><content type="html" xml:base="https://honghui-liu.github.io/notes/2020/07/03/xstar.html">&lt;p&gt;This is very simple tutorial about how to construct a warm absorption table with code &lt;a href=&quot;https://heasarc.gsfc.nasa.gov/docs/software/heasoft/xstar/xstar.html&quot;&gt;XSTAR&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://honghui-liu.github.io/notes/feed.xml" rel="self" type="application/atom+xml" /><link href="https://honghui-liu.github.io/notes/" rel="alternate" type="text/html" /><updated>2020-07-03T22:02:36+08:00</updated><id>https://honghui-liu.github.io/notes/feed.xml</id><title type="html">Blogs</title><subtitle>Astrophysics</subtitle><author><name>Honghui</name></author><entry><title type="html">A simple tutorial for XSTAR</title><link href="https://honghui-liu.github.io/notes/2020/07/03/xstar.html" rel="alternate" type="text/html" title="A simple tutorial for XSTAR" /><published>2020-07-03T00:00:00+08:00</published><updated>2020-07-03T00:00:00+08:00</updated><id>https://honghui-liu.github.io/notes/2020/07/03/xstar</id><content type="html" xml:base="https://honghui-liu.github.io/notes/2020/07/03/xstar.html">&lt;p&gt;This is very simple tutorial about how to construct a warm absorption table with code &lt;a href=&quot;https://heasarc.gsfc.nasa.gov/docs/software/heasoft/xstar/xstar.html&quot;&gt;XSTAR&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h1 id=&quot;what-does-xstar-calculate&quot;&gt;What does XSTAR calculate?&lt;/h1&gt;</content><author><name>Honghui</name></author><summary type="html">This is very simple tutorial about how to construct a warm absorption table with code XSTAR.</summary></entry><entry><title type="html">References</title><link href="https://honghui-liu.github.io/notes/2020/04/11/References.html" rel="alternate" type="text/html" title="References" /><published>2020-04-11T00:00:00+08:00</published><updated>2020-04-11T00:00:00+08:00</updated><id>https://honghui-liu.github.io/notes/2020/04/11/References</id><content type="html" xml:base="https://honghui-liu.github.io/notes/2020/04/11/References.html">&lt;p&gt;A collection of important references.&lt;/p&gt;
+&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The XSTAR manual: &lt;a href=&quot;https://heasarc.gsfc.nasa.gov/docs/software/heasoft/xstar/docs/html/xstarmanual.html&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;what-does-xstar-calculate&quot;&gt;What does XSTAR calculate?&lt;/h2&gt;
+
+&lt;p&gt;Quote from the manual:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;A spherical gas shell surrounding a central source of ionizing radiation absorbs some of this radiation and reradiates it in other portions of the spectrum; XSTAR computes the effects on the gas of absorbing this energy, and the spectrum of reradiated light.&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;To make XSTAR work, we have to specify two things: the incident radiation (spectral continuum shape and luminosity) and properties of the gas (column density, number density, temperature, pressure, turbulent velocity, element abundance…).&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-use-xstar&quot;&gt;How to use XSTAR&lt;/h2&gt;
+
+&lt;p&gt;I usually use the task &lt;a href=&quot;https://heasarc.gsfc.nasa.gov/docs/software/heasoft/xstar/docs/html/node88.html&quot;&gt;XSTAR2XSPEC&lt;/a&gt; to calculate the absorption table.&lt;/p&gt;
+
+&lt;p&gt;The spectrum of the incident radiation can be user defined and is controlled by keywords &lt;a href=&quot;https://heasarc.gsfc.nasa.gov/docs/software/heasoft/xstar/docs/html/node34.html&quot;&gt;“spectrum”&lt;/a&gt;, &lt;a href=&quot;https://heasarc.gsfc.nasa.gov/docs/software/heasoft/xstar/docs/html/node35.html&quot;&gt;“spectrum_file”&lt;/a&gt; and &lt;a href=&quot;https://heasarc.gsfc.nasa.gov/docs/software/heasoft/xstar/docs/html/node36.html&quot;&gt;“spectun”&lt;/a&gt; in the parameter file. The source luminosity is defined by keyword “rlrad38”. The normalization of the spectral continuum in “spectrum_file” does not matter since XSTAR will renormalize the spectrum according to the source luminosity.&lt;/p&gt;
+
+&lt;p&gt;Note that the parameter locates at this directory if XSTAR package is installed along with heasoft6.26:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/opt/tools/heasoft/heasoft-6.26/x86_64-pc-linux-gnu-libc2.19/syspfiles/xstinitable.par
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;By editing this file, we are able to control every parameter concerning the calculation (For script &lt;a href=&quot;https://heasarc.gsfc.nasa.gov/docs/software/heasoft/xstar/docs/html/node88.html&quot;&gt;XSTAR2XSPEC&lt;/a&gt;). Please refer to the file “xstar.par’ in the same directory for the meaning of each column in the parameter file. For example, if you want the iron abundance to be a variable parameter, edit the line &lt;code&gt;feabundtyp,i,h,0,0,2,&quot;iron abundance variation type&quot;&lt;/code&gt; to &lt;code&gt;feabundtyp,i,h,2,0,2,&quot;iron abundance variation type&quot;&lt;/code&gt;. The minimal and maximum parameter value, interpolation type (linear or logarithmic), number of steps can be defined in the same way. So editing the parameter file can help to define both the incident radiation and properties of the intervening gas.&lt;/p&gt;
+
+&lt;p&gt;There are some parameters controlling the calculation process (number of iterations, step size…). For these parameters, I usually take the default values, but modification may be needed in some extreme cases (there are some examples in the manual).&lt;/p&gt;
+
+&lt;h2 id=&quot;some-important-parameters&quot;&gt;Some important parameters&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The covering fraction.&lt;/li&gt;
+  &lt;li&gt;The temperature.&lt;/li&gt;
+  &lt;li&gt;The pressure.&lt;/li&gt;
+  &lt;li&gt;The gas number density.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;The source luminosity (from 1Ry to 1000 Ry, 1Ry=13.6).&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;The column density range and number of steps.&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;The ionization parameter range and number of steps.&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;The input spectrum file.&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;The turbulent velocity (in km/s).&lt;/li&gt;
+  &lt;li&gt;The model name.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;output-files-from-xstar2xspec&quot;&gt;Output files from XSTAR2XSPEC&lt;/h2&gt;
+
+&lt;p&gt;There are four output files, I will quote from the XSTAR manual.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. xstar2xspec.log is a concatenation of all the xout_step.log files from all the xstar runs called by xstar2xspec.
+
+2. xout_ain.fits is a fits file containing the atable with the reflected emission spectrum produced by xstar. This file is ready for use by xspec using the `model atable xout_ain.fits ...' command.
+
+3. xout_aout.fits is fits file containing the atable with the emission spectrum in the forward (transmitted) direction produced by xstar. This file is ready for use by xspec using the `model atable xout_aout.fits ...' command.
+
+4. xout_mtable.fits is a fits file containing the mtable with the absorption spectrum in the forward (transmitted) direction produced by xstar. This file is ready for use by xspec using the `model mtable xout_mtable.fits pow ...' command.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Honghui</name></author><summary type="html">This is very simple tutorial about how to construct a warm absorption table with code XSTAR.</summary></entry><entry><title type="html">References</title><link href="https://honghui-liu.github.io/notes/2020/04/11/References.html" rel="alternate" type="text/html" title="References" /><published>2020-04-11T00:00:00+08:00</published><updated>2020-04-11T00:00:00+08:00</updated><id>https://honghui-liu.github.io/notes/2020/04/11/References</id><content type="html" xml:base="https://honghui-liu.github.io/notes/2020/04/11/References.html">&lt;p&gt;A collection of important references.&lt;/p&gt;
 
 &lt;h1 id=&quot;x-ray-binaries-xrbs&quot;&gt;X-Ray Binaries (XRBs)&lt;/h1&gt;</content><author><name>Honghui</name></author><summary type="html">A collection of important references.</summary></entry><entry><title type="html">Useful material for projects</title><link href="https://honghui-liu.github.io/notes/2020/03/01/useful-material.html" rel="alternate" type="text/html" title="Useful material for projects" /><published>2020-03-01T00:00:00+08:00</published><updated>2020-03-01T00:00:00+08:00</updated><id>https://honghui-liu.github.io/notes/2020/03/01/useful-material</id><content type="html" xml:base="https://honghui-liu.github.io/notes/2020/03/01/useful-material.html">&lt;p&gt;This page is used to record the useful links, commands and softwares that I found can be very helpful for doing projects.&lt;/p&gt;
 
