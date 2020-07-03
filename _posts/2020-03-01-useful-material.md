@@ -3,7 +3,7 @@ layout: post
 title: "Useful material for projects"
 ---
 
-*This page is used to record the useful links, commands and references that I found can be very helpful for doing projects.*
+This page is used to record the useful links, commands and softwares that I found can be very helpful for doing projects.
 
 ## Links
 
