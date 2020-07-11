@@ -16,6 +16,7 @@ This page is used to record the useful links, commands and softwares that I foun
 * Plotting with PLT: [here](https://heasarc.gsfc.nasa.gov/docs/xte/recipes/plotting.html)
 * The ftool ftgrouppha: [click](https://heasarc.gsfc.nasa.gov/lheasoft/ftools/headas/ftgrouppha.html)
 * Xselect: [Introduction](https://www.swift.ac.uk/analysis/xrt/xselect.php), [Guide](https://heasarc.gsfc.nasa.gov/ftools/xselect/node1.html)
+* Spearman's Critical Correlation Calculator: [1](https://mathcracker.com/spearmans-critical-correlation-calculator#results), [Calculator](https://geographyfieldwork.com/SpearmansRankCalculator.html#Strength-of-Correlation), [Pearson and Spearman](https://www.jianshu.com/p/93a3861e8edc), [python module](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.spearmanr.html).
 
 ### Catalog
 
