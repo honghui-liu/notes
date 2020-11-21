@@ -13,7 +13,8 @@ This page is used to record the useful links, commands and softwares that I foun
 * The Galactic nH calculator: [engage!](https://www.swift.ac.uk/analysis/nhtot/index.php)
 * RA DEC flexible converter: [click me](http://www.astrouw.edu.pl/~jskowron/ra-dec/)
 * MJD converter: [here it is](http://www.csgnetwork.com/julianmodifdateconv.html)
-* Plotting with PLT: [here](https://heasarc.gsfc.nasa.gov/docs/xte/recipes/plotting.html)
+* Date/time conversion: [xTime](https://heasarc.gsfc.nasa.gov/cgi-bin/Tools/xTime/xTime.pl)
+* Plotting with PLT: [here](https://heasarc.gsfc.nasa.gov/docs/xte/recipes/plotting.html), [Label](https://heasarc.gsfc.nasa.gov/ftools/others/qdp/node136.html`)
 * The ftool ftgrouppha: [click](https://heasarc.gsfc.nasa.gov/lheasoft/ftools/headas/ftgrouppha.html)
 * Xselect: [Introduction](https://www.swift.ac.uk/analysis/xrt/xselect.php), [Guide](https://heasarc.gsfc.nasa.gov/ftools/xselect/node1.html)
 * Spearman's Critical Correlation Calculator: [1](https://mathcracker.com/spearmans-critical-correlation-calculator#results), [Calculator](https://geographyfieldwork.com/SpearmansRankCalculator.html#Strength-of-Correlation), [Pearson and Spearman](https://www.jianshu.com/p/93a3861e8edc), [python module](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.spearmanr.html).
@@ -22,16 +23,19 @@ This page is used to record the useful links, commands and softwares that I foun
 
 * Swift Hard X-ray Survey: [Let's go](https://swift.gsfc.nasa.gov/results/bs105mon/)
 * The Swift-XRT Point Source catalog: [2SXPS](https://www.swift.ac.uk/2SXPS/)
+* The black hole XRB monitor: [link](http://integral.esac.esa.int/blackholemonitor/black-hole-monitor.php)
 
 ### Website
 
 * Homepage of: [Cosimo Bambi](http://www.physics.fudan.edu.cn/tps/people/bambi/Site/Home.html)
 * The Cambridge group: [Here](https://www-xray.ast.cam.ac.uk/)
 * Heasarc FTP: [go](https://heasarc.gsfc.nasa.gov/FTP/)
+* Search for observations: [browse](https://heasarc.gsfc.nasa.gov/cgi-bin/W3Browse/w3browse.pl)
 
 ### Workshop
 
 * X-ray spectral fitting methods workshop: [here](https://www.mpe.mpg.de/resources/HE/Buchner/xrayworkshop/?fbclid=IwAR3aKISdmmASKO-IeX3skdzgFREszKa16WFbACG_tj-FQnHqeY0GYkFHyGs)
+* The 2020 AtomDB workshop: [link](http://www.atomdb.org/Meetings/2020/)
 
 ### Software
 
@@ -41,7 +45,7 @@ This page is used to record the useful links, commands and softwares that I foun
 
 * X-ray transition energies: [go](https://www.nist.gov/pml/x-ray-transition-energies-database)
 * The chi-square table: [chi](http://www.reid.ai/2012/09/chi-squared-distribution-table-with.html)
-* Uncertainty transformation: [click](https://www.cnblogs.com/heaventian/archive/2012/11/24/2786241.html)
+* Uncertainty transformation: [click](https://www.cnblogs.com/heaventian/archive/2012/11/24/2786241.html), [theory](https://phas.ubc.ca/~oser/p509/Lec_10.pdf)
 
 ## References
 
