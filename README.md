@@ -1,3 +1,7 @@
-# Data reduction
+# My blog
 
-There are many X-ray missions (NuSTAR, Suzaku, XMM-Newton...) that provide valuable data with which we have achieved huge progress in the understanding of the universe in the past decades. Usually, the raw data from each mission is in no good quality for quantitative analysis. People would have to reprocess the data according to specific purpose. This is what the "data reduction" in the title means.
+It's a great thing to write things down so you do not have to worry about forgetting things. It's even better when putting notes online, so they can be helpful for others.
+
+This website serves to collect all the useful information (software, materials for some topics) I have learned. I'll keep it updated.
+
+Honghui on 2020, a year that will not be forgotten.
