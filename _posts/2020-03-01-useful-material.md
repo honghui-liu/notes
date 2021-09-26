@@ -12,6 +12,7 @@ This page is used to record the useful links, commands and softwares that I foun
 * Atomic database for astrophysicists: [ATOMDB](http://www.atomdb.org/)
 * The Galactic nH calculator: [engage!](https://www.swift.ac.uk/analysis/nhtot/index.php)
 * RA DEC flexible converter: [click me](http://www.astrouw.edu.pl/~jskowron/ra-dec/)
+* Online tool for coordinate transformation: [Ned site](https://ned.ipac.caltech.edu/forms/calculator.html)
 * MJD converter: [here it is](http://www.csgnetwork.com/julianmodifdateconv.html)
 * Date/time conversion: [xTime](https://heasarc.gsfc.nasa.gov/cgi-bin/Tools/xTime/xTime.pl)
 * Plotting with PLT: [here](https://heasarc.gsfc.nasa.gov/docs/xte/recipes/plotting.html), [Label](https://heasarc.gsfc.nasa.gov/ftools/others/qdp/node136.html`)
@@ -23,6 +24,7 @@ This page is used to record the useful links, commands and softwares that I foun
 ### Catalog
 
 * Swift Hard X-ray Survey: [Let's go](https://swift.gsfc.nasa.gov/results/bs105mon/)
+* Swift/BAT Hard X-ray Transient Monitor: [link](https://swift.gsfc.nasa.gov/results/transients/)
 * The Swift-XRT Point Source catalog: [2SXPS](https://www.swift.ac.uk/2SXPS/)
 * The black hole XRB monitor: [link](http://integral.esac.esa.int/blackholemonitor/black-hole-monitor.php)
 
@@ -41,6 +43,10 @@ This page is used to record the useful links, commands and softwares that I foun
 ### Software
 
 * The CLOUDY homepage: [CLOUDY](https://www.nublado.org/)
+
+## Tutorials
+
+- How to install calibration: [click](https://heasarc.gsfc.nasa.gov/docs/heasarc/caldb/caldb_install.html)
 
 ### Others
 
@@ -70,7 +76,7 @@ grppha source_spectrum.fits pn_25.grp comm= "chkey RESPFILE pn.rmf & chkey ANCRF
 wget -q -nH --no-check-certificate --cut-dirs=3 -r -l0 -c -N -np -R 'index*' -erobots=off --retr-symlinks https://heasarc.gsfc.nasa.gov/FTP/caldb/data/suzaku/
 ```
 
-* To use [optimal binning](https://arxiv.org/abs/1601.05309) strategy with ftool <code>ftgrouppha</code>
+* To use [optimal binning](https://arxiv.org/abs/1601.05309) strategy with ftool `ftgrouppha`([usage](https://heasarc.gsfc.nasa.gov/lheasoft/ftools/headas/ftgrouppha.html))
 
 ```
 ftgrouppha infile=MAXIJ1535_LE_chkey.pha backfile=MAXIJ1535_LE_bkg.pha outfile=MAXIJ1535_LE_opt.pha grouptype=opt respfile=MAXIJ1535_LE.rsp clobber=yes
