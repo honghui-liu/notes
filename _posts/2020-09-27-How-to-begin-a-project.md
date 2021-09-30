@@ -1,6 +1,6 @@
-# How to begin a project
-
 A (practical) tutorial for very (very) beginners in [Bambi's Gravity group of Fudan](http://www.physics.fudan.edu.cn/tps/people/bambi/Site/Home.html).
+
+# How to begin a project
 
 [toc]
 
@@ -121,10 +121,6 @@ XSPEC>plot ra
 - Do you see the iron line and Compton hump?
 - Can you fit the spectra with `relxill` model and recover the input parameters for simulation? (nH=0.6, a=0.998, incl=30.0, index1=index2=3, gamma=2.0, logxi=3.0, Afe=1.0).
 - Can you report the uncertainties for each parameter?
-
-<img src="./images/ironline-simu.png" alt="ironline-simulation" style="zoom:30%;" />
-
-<center style="color:#C0C0C0; text-decoration:underline"> Fig.1 Reflection features in simulation.
 
 ## A few other things
 
