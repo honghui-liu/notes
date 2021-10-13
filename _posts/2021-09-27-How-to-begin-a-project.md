@@ -101,8 +101,9 @@ It is better to understand the questions (at least qualitatively) below if analy
   - Figure out the meaning of these numbers (1:1) in the command above.
   - How to account for the cross normalization between different instruments?
 - How to get the uncertainties (errorbars, constraints) of certain parameters? (`error` command in XSPEC)
-- What is degeneracy of parameters and how to estimate the degeneracy?
+- What is degeneracy between parameters and how to estimate the degeneracy?
   - `steppar` command in XSPEC.
+  - Morkov Chain Monte Carlo (MCMC) simulation.
 
 ### About the iron line
 
@@ -128,6 +129,8 @@ XSPEC>plot ra
 
 - The fontsize of the annotations and labels should at least be larger than the caption in the paper.
 
+ ### Some tips
 
+- **Read papers** even it is hard to understand in the beginning (you can always ask Cosimo when there are questions:)
 
 Last edited on 2021/09/27 by [Liu Honghui](https://honghui-liu.github.io/).
