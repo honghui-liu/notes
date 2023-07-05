@@ -25,11 +25,12 @@ A collection of **must-read** references.
 ## About spectral states of black hole XRBs
 
 - [Zdziarski & Gierlinski 2004](https://ui.adsabs.harvard.edu/abs/2004PThPS.155...99Z/abstract), "Radiative Processes, Spectral States and Variability of Black-Hole Binaries"
-- [Fenders et al. 2004](https://ui.adsabs.harvard.edu/abs/2004MNRAS.355.1105F/abstract), "Towards a unified model for black hole X-ray binary jets"
-- [Belloni et al, 2005](https://ui.adsabs.harvard.edu/abs/2005A%26A...440..207B/abstract), "The evolution of the timing properties of the black-hole transient GX 339-4 during its 2002/2003 outburst"
+- [Fenders et al. 2004](https://ui.adsabs.harvard.edu/abs/2004MNRAS.355.1105F/abstract), "Towards a unified model for black hole X-ray binary jets" (**Jet and HID**)
+- [Belloni et al, 2005](https://ui.adsabs.harvard.edu/abs/2005A%26A...440..207B/abstract), "The evolution of the timing properties of the black-hole transient GX 339-4 during its 2002/2003 outburst" (**HID**)
 - [Homan et al. 2005](https://ui.adsabs.harvard.edu/abs/2005Ap%26SS.300..107H/abstract), "The Evolution of Black Hole States"
 - [Remillard & McClintock 2006](https://ui.adsabs.harvard.edu/abs/2006ARA&A..44...49R), "X-Ray Properties of Black-Hole Binaries" (**Can't miss this paper!**)
-- [Done et al. 2007](https://ui.adsabs.harvard.edu/abs/2007A%26ARv..15....1D/abstract), "Modelling the behaviour of accretion flows in X-ray binaries. Everything you always wanted to know about accretion but were afraid to ask" 
+- [Done et al. 2007](https://ui.adsabs.harvard.edu/abs/2007A%26ARv..15....1D/abstract), "Modelling the behaviour of accretion flows in X-ray binaries. Everything you always wanted to know about accretion but were afraid to ask" (**Everything you want to know!**)
+- [Done et al. 2010](https://ui.adsabs.harvard.edu/abs/2010arXiv1008.2287D/abstract), "Observational characteristics of accretion onto black holes" (**A great reference for students**)
 - [Dunn et al. 2010](https://ui.adsabs.harvard.edu/abs/2010MNRAS.403...61D/abstract), "A global spectral study of black hole X-ray binaries"
 - [Dunn et al. 2011](https://ui.adsabs.harvard.edu/abs/2011MNRAS.411..337D/abstract), "A global study of the behaviour of black hole X-ray binary discs"
 - [Fender et al. 2012](https://ui.adsabs.harvard.edu/abs/2012Sci...337..540F/abstract), "Stellar-Mass Black Holes and Ultraluminous X-ray Sources"
