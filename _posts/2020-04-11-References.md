@@ -47,6 +47,8 @@ The disk instability
 
 - [Fabian et al. 1989](https://ui.adsabs.harvard.edu/abs/1989MNRAS.238..729F/abstract), "X-ray fluorescence from the inner disc in Cygnus X-1"
 - [George & Fabian, 1991](https://ui.adsabs.harvard.edu/abs/1991MNRAS.249..352G/abstract), "X-ray reflection from cold matter in Active Galactic Nuclei and X-ray binaries"
+- [Laor et al. 1991](https://ui.adsabs.harvard.edu/abs/1991ApJ...376...90L/abstract), "Line Profiles from a Disk around a Rotating Black Hole"
+- [Tanaka et al. 1995](https://ui.adsabs.harvard.edu/abs/1995Natur.375..659T/abstract), "Gravitationally redshifted emission implying an accretion disk and massive black hole in the active galaxy MCG-6-30-15"
 - [Reynolds 2014](https://ui.adsabs.harvard.edu/abs/2014SSRv..183..277R/abstract), "Measuring Black Hole Spin Using X-Ray Reflection Spectroscopy"
-- [Bambi et al. 2021](https://ui.adsabs.harvard.edu/abs/2021SSRv..217...65B/abstract)
-- [Reynolds et al. 2021]
+- [Bambi et al. 2021](https://ui.adsabs.harvard.edu/abs/2021SSRv..217...65B/abstract), "Towards Precision Measurements of Accreting Black Holes Using X-Ray Reflection Spectroscopy" (**Very good summary of reflection models and open questions in the field**)
+- [Reynolds et al. 2021](https://ui.adsabs.harvard.edu/abs/2021ARA%26A..59..117R/abstract), "Observational Constraints on Black Hole Spin"
