@@ -52,3 +52,7 @@ The disk instability
 - [Reynolds 2014](https://ui.adsabs.harvard.edu/abs/2014SSRv..183..277R/abstract), "Measuring Black Hole Spin Using X-Ray Reflection Spectroscopy"
 - [Bambi et al. 2021](https://ui.adsabs.harvard.edu/abs/2021SSRv..217...65B/abstract), "Towards Precision Measurements of Accreting Black Holes Using X-Ray Reflection Spectroscopy" (**Very good summary of reflection models and open questions in the field**)
 - [Reynolds et al. 2021](https://ui.adsabs.harvard.edu/abs/2021ARA%26A..59..117R/abstract), "Observational Constraints on Black Hole Spin"
+
+
+Last editted by Honghui Liu on 2023/07/05
+Contact: hhliu19-at-fudan.edu.cn; honghui_astro-at-outlook.com
