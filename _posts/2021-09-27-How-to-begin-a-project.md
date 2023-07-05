@@ -128,9 +128,13 @@ XSPEC>plot ra
 ### Some principles of making plots
 
 - The fontsize of the annotations and labels should at least be larger than the caption in the paper.
+- When plotting absorption lines, it is better to use histogram. 
+- Use `plt.tight_layout()` if using python, this will make your life easier.
 
- ### Some tips
+### Some tips
 
 - **Read papers** even it is hard to understand in the beginning (you can always ask Cosimo when there are questions:)
+	- See my blog [References](https://honghui-liu.github.io/notes/2020/04/11/References.html) for important papers to read.
 
 Last edited on 2021/09/27 by [Liu Honghui](https://honghui-liu.github.io/).
+Contact: hhliu19-at-fudan.edu.cn; honghui_astro-at-outlook.com
