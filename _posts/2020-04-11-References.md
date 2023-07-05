@@ -54,5 +54,6 @@ The disk instability
 - [Reynolds et al. 2021](https://ui.adsabs.harvard.edu/abs/2021ARA%26A..59..117R/abstract), "Observational Constraints on Black Hole Spin"
 
 
-Last editted by Honghui Liu on 2023/07/05
+Last editted by [Honghui Liu](https://honghui-liu.github.io/) on 2023/07/05
+
 Contact: hhliu19-at-fudan.edu.cn; honghui_astro-at-outlook.com
