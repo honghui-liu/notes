@@ -3,7 +3,7 @@ layout: post
 title: "References"
 ---
 
-A collection of **must-read** references.
+A collection of **must-read** references. These are mostly for X-ray reflection spectroscopy and X-ray binaries.
 
 # Why accretion important
 
