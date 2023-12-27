@@ -9,7 +9,6 @@ This page is used to record the useful links, commands and softwares that I foun
 
 ### Tools
 
-* Atomic database for astrophysicists: [ATOMDB](http://www.atomdb.org/)
 * The Galactic nH calculator: [engage!](https://www.swift.ac.uk/analysis/nhtot/index.php)
 * RA DEC flexible converter: [click me](http://www.astrouw.edu.pl/~jskowron/ra-dec/)
 * Online tool for coordinate transformation: [Ned site](https://ned.ipac.caltech.edu/forms/calculator.html)
@@ -22,6 +21,12 @@ This page is used to record the useful links, commands and softwares that I foun
 * A Mission Count Rate Simulator: [WebPIMMS](https://heasarc.gsfc.nasa.gov/cgi-bin/Tools/w3pimms/w3pimms.pl).
 * Online pipeline for processing Swift XRT data: [link](https://www.swift.ac.uk/user_objects/)
 * The interactive analysis interface for Swift: [link](https://www.ssdc.asi.it/mmia/index.php?mission=swiftmastr)
+
+### Data base
+
+* Atomic database for astrophysicists: [ATOMDB](http://www.atomdb.org/)
+* NASA/IPAC Extragalactic Database (NED): https://ned.ipac.caltech.edu/
+* SIMBAD: http://simbad.u-strasbg.fr/simbad/sim-fid
 
 ### Catalog
 
@@ -41,10 +46,17 @@ This page is used to record the useful links, commands and softwares that I foun
 
 * X-ray spectral fitting methods workshop: [here](https://www.mpe.mpg.de/resources/HE/Buchner/xrayworkshop/?fbclid=IwAR3aKISdmmASKO-IeX3skdzgFREszKa16WFbACG_tj-FQnHqeY0GYkFHyGs)
 * The 2020 AtomDB workshop: [link](http://www.atomdb.org/Meetings/2020/)
+* KouShare: https://www.koushare.com/video/videosearch
 
 ### Software
 
 * The CLOUDY homepage: [CLOUDY](https://www.nublado.org/)
+* XSTAR: https://heasarc.gsfc.nasa.gov/xstar/xstar.html
+* Bayesian X-ray Analysis: [BXA](https://johannesbuchner.github.io/BXA/?fbclid=IwAR0Hf-m33oBYmiL_dMBqN0UB2ZWQdvKLxxDxJk79q4fRGHPSTR47P0NJpow)
+* Code for HXMT data treatment (by Prof. Long Ji): http://code.ihep.ac.cn/jldirac/insight-hxmt-code-collection/-/tree/master
+* Stingray, a very useful python package for X-ray timing analysis and treatment of lightcurve data.
+  * Website: https://docs.stingray.science/en/v1.1.2.2/
+  * Github: https://github.com/StingraySoftware/stingray
 
 ## Tutorials
 
