@@ -32,9 +32,53 @@ wget -q -nH --no-check-certificate --cut-dirs=6 -r -l0 -c -N -np -R 'index*' -er
 
 Copy the script and run it in the terminal until the downloading finishes.
 
+**See also my video tutorials for downloading, reducing and analyzing X-ray data:** https://honghui-liu.github.io/blogs.html
+
+## Install heasoft
+
+HEASOFT is a collection of softwares (e.g., XSPEC, XSTAR, XANADU, FTOOLs) developed by NASA's High Energy Astrophysics (HEA) division for analyzing data from high-energy astrophysics missions.
+
+The following steps are necessary to install HEASOFT:
+
+- Download and uncompress the source code of HEASOFT: https://heasarc.gsfc.nasa.gov/lheasoft/download.html
+- Install required modules, e.g., python, perl, gcc, g++, etc.
+- Set up enviroment variables
+- Configure and install HEASOFT
+
+Detailed instructions can be found here: https://heasarc.gsfc.nasa.gov/lheasoft/linux.html
+
+An example script to install HEASOFT on my MACOS (Monterey, Intel chip):
+
+```
+export CC=/usr/local/bin/gcc-11
+export CXX=/usr/local/bin/g++-11
+export FC=/usr/local/bin/gfortran-11
+export PERL=/usr/bin/perl
+export PYTHON=/Users/honghui/anaconda/anaconda3/bin/python
+export PATH="/usr/bin:$PATH"
+
+cd heasoft-6.29/BUILD_DIR/
+./configure > config.txt 2>&1
+make > build.log 2>&1
+make install > install.log 2>&1
+```
+
+## Install CALDB
+
+Calibration data base (CALDB) files are necessary to reduce the data to the quality for scientific analysis.
+
+- To install CALDB: https://heasarc.gsfc.nasa.gov/docs/heasarc/caldb/install.html
+- Download and uncompress calibration data for specific missions: See section 3 in the link above or download from the following links:
+	- https://heasarc.gsfc.nasa.gov/docs/heasarc/caldb/caldb_supported_missions.html
+  	- https://heasarc.gsfc.nasa.gov/FTP/caldb/data/
+
 ## Reduce data
 
-The data downloaded following the last section is 'raw data'. Generally, it has to be reduced for any scientific purpose. The data reduction procedure is different for different instruments. Here is a list for data reduction manuals of several X-ray missions:
+The data downloaded following the section "Download data" is 'raw data'. Generally, it has to be reduced for any scientific purpose. The data reduction procedure is different for different instruments. Here is a list for data reduction manuals of several X-ray missions:
+
+**Note that the HEASOFT and CALDB must be initilzed before reducing the data.**
+
+**Always remember the version of HEASOFT and CALDB used to reduce data, as these should be reported in the paper for others to reproduce the results.**
 
 - XMM-Newton: [My blog](https://honghui-liu.github.io/notes/2020/02/27/XMM-data-reduction.html) and references there in:)
 - Suzaku: [My reduction script](https://github.com/honghui-liu/suzaku_reduction).
@@ -130,12 +174,14 @@ XSPEC>plot ra
 - The fontsize of the annotations and labels should at least be larger than the caption in the paper.
 - When plotting absorption lines, it is better to use histogram. 
 - Use `plt.tight_layout()` if using python, this will make your life easier.
+- Do not show "unfolded spectrum" (e.g., output of `plot uf` in XSPEC) in papers, because that is not the real source spectrum and unfolding is model-dependent in XSPEC. In stead, show the output of `plot eemodel ra` or `plot eemodel delchi`.
 
 ### Some tips
 
 - **Read papers** even it is hard to understand in the beginning (you can always ask Cosimo when there are questions:)
 	- See my blog [References](https://honghui-liu.github.io/notes/2020/04/11/References.html) for important papers to read.
+- Always seize the chance to present your results at group meeting, conferences or invited talks.
 
-Last edited on 2021/09/27 by [Liu Honghui](https://honghui-liu.github.io/).
+Last edited on 2024/09/13 by [Liu Honghui](https://honghui-liu.github.io/).
 
 Contact: hhliu19-at-fudan.edu.cn; honghui_astro-at-outlook.com
